@@ -1,3 +1,5 @@
+##### angular 8.2.14 버전으로 테스트할 수 있게 변경함.
+
 [![taylor swift](https://img.shields.io/badge/secured%20by-taylor%20swift-brightgreen.svg)](https://twitter.com/SwiftOnSecurity)
 [![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 [![Build Status](https://travis-ci.org/gdi2290/angular-starter.svg?branch=master)](https://travis-ci.org/gdi2290/angular-starter)
@@ -328,7 +330,7 @@ import * as _ from 'lodash';
   * The `EADDRINUSE` error means the port `3000` is currently being used and `EACCES` is lack of permission for webpack to build files to `./dist/`
 * How to use `sass` for css?
  *  * `loaders: ['raw-loader','sass-loader']` and `@Component({ styleUrls: ['./filename.scss'] })` see Wiki page [How to include SCSS in components](https://github.com/gdi2290/angular-starter/wiki/How-to-include-SCSS-in-components), or issue [#136](https://github.com/gdi2290/angular-starter/issues/136) for more information.
-* How do I test a Service?  
+* How do I test a Service?
   * See issue [#130](https://github.com/gdi2290/angular-starter/issues/130#issuecomment-158872648)
 * How do I add `vscode-chrome-debug` support?
   * The VS Code chrome debug extension support can be done via `launch.json` see issue [#144](https://github.com/gdi2290/angular-starter/issues/144#issuecomment-164063790)
@@ -420,7 +422,7 @@ And that's all, you can open browser and go to [localhost:8080](localhost:8080).
 
 ### Build and Run image using docker-compose
 
-To create and run docker image on [localhost:8080](localhost:8080) as part of large project you may use **docker-compose**. Type 
+To create and run docker image on [localhost:8080](localhost:8080) as part of large project you may use **docker-compose**. Type
 
 `docker-compose up`
 
@@ -465,11 +467,11 @@ starter kit in production on [Netlify](https://www.netlify.com/):
 ### Optional Integration with SonarQube (for continous code quality)
 Assuming you have SonarQube 5.5.6 (LTS) installed
 * Setup SonarQube with the [Sonar Typescript plugin](https://github.com/Pablissimo/SonarTsPlugin#installation) and the Generic Test Coverage plugin https://docs.sonarqube.org/display/PLUG/Generic+Test+Coverage
-* Install sonar-scanner globally 
+* Install sonar-scanner globally
 ```bash
 npm install --global sonar-scanner
 ```
-* Install the [Karma plugin for sonarqube](https://www.npmjs.com/package/karma-sonarqube-unit-reporter) as a dev dependency 
+* Install the [Karma plugin for sonarqube](https://www.npmjs.com/package/karma-sonarqube-unit-reporter) as a dev dependency
 ```bash
 npm install karma-sonarqube-unit-reporter --save-dev
 ```
@@ -486,7 +488,7 @@ npm run test:sonar
 * Push results to SonarCube
 ```bash
 sonar-scanner
-``` 
+```
 * If working with SonarQube 6.x it supports [Generic Test Data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data)
 * Modify the [karma.conf.js](config/karma.config.js) to set the appropriate version of the sonarQube
 ```es6
